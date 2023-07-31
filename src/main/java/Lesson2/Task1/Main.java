@@ -20,7 +20,7 @@ public class Main {
                 } else {
                     throw new InputMismatchException();
                 }
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException | NumberFormatException e) {
                 System.out.print("Введите дробное число: ");
             }
         }
